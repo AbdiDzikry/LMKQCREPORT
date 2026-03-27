@@ -1,0 +1,62 @@
+buatkan aplikasi input data  internal problem report qc document
+
+konsep nya adalah seperti ini
+
+akan ada 2 role, leader dan section head
+
+1. input problem
+2. verifikasi
+3. Approval information
+
+1. input problem
+    -  ini wajib di input temuan nya isian dari input prblem berupa berikut
+    a. tanggal bulan tahun (default nya terisi tanggal sekarang tetapi bisa di custom)
+    b. section: 2W dan 4W pilihannya 
+    c. Comp Name 2W pilihannya radio button ada
+        bar comp step
+        bracket comp l pillion set 
+        bracket comp r pillion set 
+        bracket comp rr cros
+        muffler assy exh 
+        pipe comp luggage box 
+        pipe comp steering handle
+        pipe comp steering head
+     d. No part  product number field isian manual 
+     e. Nama part
+     f. Customer pilihannya:
+        AHM
+        ADM
+        HMMI
+        HPM 
+        MKM
+     g. Line Problem 
+     h. Kategori Problem pilihannya:
+        Single Part 
+        Sub Assy 
+        Finishing 
+     i. Jumlah Temuan (Pcs) isian manual
+     j. problem status pilihan baru atau berulang
+     k. Vendor isian manual 
+     l. Type isian manual
+     m. problem pilihan nya visual, dimensi, kelengkapan.
+     n. detail problem
+     o. PIC QC manual  
+
+
+     konsep nya setelah leader mengisi input problem maka akan masuk ke verifikasi
+     section head akan menerima notifikasi untuk verifikasi
+     section head bisa menerima atau menolak
+     jika menerima maka akan masuk ke outflow dan generate dokumen LMK/  internal problem report qc document
+     jika tidak maka hanya akan masuk outflow
+
+     nanti nya report ini bisa di generate secara excel dan pdf
+
+dari saya yang fitur ada itu seperti 
+
+1. login
+2. Dashboard
+3. Tampilan untuk leader dan section head aprroval dibedakan
+
+selanjutnya saya meminta anda untuk melengkapi kekurangan yang ada pada projek ini 
+
+     

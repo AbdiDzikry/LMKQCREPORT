@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body { background: white; margin: 0; padding: 20px; font-family: Arial; display: flex; align-items: center; justify-content: start; scale: 2; transform-origin: top left; }
+        .flow-container { display: flex; align-items: center; gap: 10px; }
+        .chevron { 
+            width: 120px; height: 60px; background: white; border: 2px solid black; 
+            position: relative; clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%, 10% 50%);
+        }
+        .diamond { 
+            width: 60px; height: 60px; background: white; border: 2px solid black; 
+            transform: rotate(45deg); margin-left: 20px;
+        }
+        .arrow { font-size: 30px; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="flow-container">
+        <div class="chevron"></div>
+        <div class="arrow">➔</div>
+        <div class="chevron"></div>
+        <div class="arrow">➔</div>
+        <div class="chevron"></div>
+        <div class="arrow">➔</div>
+        <div class="diamond"></div>
+    </div>
+</body>
+</html>

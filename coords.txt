@@ -1,0 +1,207 @@
+Array
+(
+    [LAPORAN MASALAH KUALITAS] => Array
+        (
+            [0] => B1
+        )
+
+    [Dibuat] => Array
+        (
+            [0] => Q1
+        )
+
+    [Disetujui] => Array
+        (
+            [0] => U1
+        )
+
+    [PIC QC] => Array
+        (
+            [0] => Q2
+        )
+
+    [Sect Head QC] => Array
+        (
+            [0] => S2
+        )
+
+    [PIC IQC] => Array
+        (
+            [0] => U2
+        )
+
+    [PIC Procurement] => Array
+        (
+            [0] => W2
+        )
+
+    [(Internal Problem Report QC)] => Array
+        (
+            [0] => B4
+        )
+
+    [PT. DHARMA POLIMETAL Tbk] => Array
+        (
+            [0] => A6
+        )
+
+    [1. BACKGROUND] => Array
+        (
+            [0] => A7
+        )
+
+    [5.TEMPORARY ACTION] => Array
+        (
+            [0] => I7
+        )
+
+    [No. Registrasi] => Array
+        (
+            [0] => A8
+        )
+
+    [Informasi problem dari :] => Array
+        (
+            [0] => E8
+        )
+
+    [Part Comp Name] => Array
+        (
+            [0] => A9
+        )
+
+    [Line Problem :] => Array
+        (
+            [0] => E9
+        )
+
+    [Part Comp Number] => Array
+        (
+            [0] => A10
+        )
+
+    [Tanggal] => Array
+        (
+            [0] => E10
+        )
+
+    [:] => Array
+        (
+            [0] => F10
+            [1] => F11
+            [2] => F12
+        )
+
+    [Type / Model] => Array
+        (
+            [0] => A11
+        )
+
+    [Jam] => Array
+        (
+            [0] => E11
+        )
+
+    [Nama Part OHP] => Array
+        (
+            [0] => A12
+        )
+
+    [Customer] => Array
+        (
+            [0] => E12
+        )
+
+    [No. Part OHP] => Array
+        (
+            [0] => A13
+        )
+
+    [Jumlah NG] => Array
+        (
+            [0] => A14
+        )
+
+    [Problem Status] => Array
+        (
+            [0] => A15
+        )
+
+    [Line Stop] => Array
+        (
+            [0] => A16
+        )
+
+    [Klasifikasi] => Array
+        (
+            [0] => A17
+        )
+
+    [Detail Problem] => Array
+        (
+            [0] => A18
+        )
+
+    [2. ILUSTRASI PROBLEM:] => Array
+        (
+            [0] => A19
+        )
+
+    [6. OUTFLOW (WHY SEND)] => Array
+        (
+            [0] => I19
+        )
+
+    [PROBLEM] => Array
+        (
+            [0] => I20
+            [1] => I31
+        )
+
+    [Why 1] => Array
+        (
+            [0] => L20
+            [1] => L31
+        )
+
+    [Why 2] => Array
+        (
+            [0] => N20
+            [1] => N31
+        )
+
+    [Why 3] => Array
+        (
+            [0] => P20
+            [1] => P31
+        )
+
+    [Why 4] => Array
+        (
+            [0] => R20
+            [1] => R31
+        )
+
+    [Why 5] => Array
+        (
+            [0] => T20
+            [1] => T31
+        )
+
+    [Root Couse] => Array
+        (
+            [0] => V20
+            [1] => V31
+        )
+
+    [3. IDENTIFICATION PROBLEM] => Array
+        (
+            [0] => A30
+        )
+
+    [7. OCCURRENCE PREVENTION (WHY MADE)] => Array
+        (
+            [0] => I30
+        )
+
+)

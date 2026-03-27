@@ -1,0 +1,65 @@
+Cell Border and Fill Analysis (Rows 8-15)
+==========================================
+
+[A8] Border: Yes | Fill: None | Value: No. Registrasi
+[B8] Border: Yes | Fill: None | Value: 
+[C8] Border: Yes | Fill: None | Value: 
+[D8] Border: Yes | Fill: None | Value: 
+[E8] Border: Yes | Fill: FFCCFFFF | Value: Informasi problem dari :
+[F8] Border: Yes | Fill: FFCCFFFF | Value: 
+[G8] Border: Yes | Fill: FFCCFFFF | Value: 
+[H8] Border: Yes | Fill: None | Value: 
+[A9] Border: Yes | Fill: None | Value: Part Comp Name
+[B9] Border: Yes | Fill: None | Value: 
+[C9] Border: Yes | Fill: None | Value: 
+[D9] Border: Yes | Fill: None | Value: 
+[E9] Border: Yes | Fill: None | Value: Line Problem :
+[F9] Border: Yes | Fill: None | Value: 
+[G9] Border: Yes | Fill: None | Value: 
+[H9] Border: Yes | Fill: None | Value: 
+[A10] Border: Yes | Fill: None | Value: Part Comp Number
+[B10] Border: Yes | Fill: None | Value: 
+[C10] Border: Yes | Fill: None | Value: 
+[D10] Border: Yes | Fill: None | Value: 
+[E10] Border: Yes | Fill: None | Value: Tanggal
+[F10] Border: Yes | Fill: None | Value: :
+[G10] Border: Yes | Fill: None | Value: 
+[H10] Border: Yes | Fill: None | Value: 
+[A11] Border: Yes | Fill: None | Value: Type / Model
+[B11] Border: Yes | Fill: None | Value: 
+[C11] Border: Yes | Fill: None | Value: 
+[D11] Border: Yes | Fill: None | Value: 
+[E11] Border: Yes | Fill: None | Value: Jam
+[F11] Border: Yes | Fill: None | Value: :
+[G11] Border: Yes | Fill: None | Value: 
+[H11] Border: Yes | Fill: None | Value: 
+[A12] Border: Yes | Fill: None | Value: Nama Part OHP
+[B12] Border: Yes | Fill: None | Value: 
+[C12] Border: Yes | Fill: None | Value: 
+[D12] Border: Yes | Fill: None | Value: 
+[E12] Border: Yes | Fill: None | Value: Customer
+[F12] Border: Yes | Fill: None | Value: :
+[G12] Border: Yes | Fill: None | Value: 
+[H12] Border: Yes | Fill: None | Value: 
+[A13] Border: Yes | Fill: None | Value: No. Part OHP
+[B13] Border: Yes | Fill: None | Value: 
+[C13] Border: Yes | Fill: None | Value: 
+[D13] Border: Yes | Fill: None | Value: 
+[F13] Border: Yes | Fill: None | Value: 
+[G13] Border: Yes | Fill: None | Value: 
+[H13] Border: Yes | Fill: None | Value: 
+[A14] Border: Yes | Fill: None | Value: Jumlah NG
+[B14] Border: Yes | Fill: None | Value: 
+[C14] Border: Yes | Fill: None | Value: 
+[D14] Border: Yes | Fill: None | Value: 
+[E14] Border: Yes | Fill: None | Value: 
+[G14] Border: Yes | Fill: None | Value: 
+[H14] Border: Yes | Fill: None | Value: 
+[A15] Border: Yes | Fill: None | Value: Problem Status
+[B15] Border: Yes | Fill: None | Value: 
+[C15] Border: Yes | Fill: None | Value: 
+[D15] Border: Yes | Fill: None | Value: 
+[E15] Border: Yes | Fill: None | Value: 
+[F15] Border: Yes | Fill: None | Value: 
+[G15] Border: Yes | Fill: None | Value: 
+[H15] Border: Yes | Fill: None | Value: 

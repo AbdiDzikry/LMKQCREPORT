@@ -1,0 +1,205 @@
+FORM LMK.xlsx Structure Analysis
+=================================
+
+MERGED CELLS:
+- I32:K38
+- L32:M38
+- N32:O38
+- P32:Q38
+- R32:S38
+- T32:U38
+- V32:X38
+- A41:G41
+- I41:X41
+- A42:G42
+- I42:N54
+- O50:X50
+- A51:A54
+- O51:X51
+- O52:X52
+- O53:X53
+- I21:K27
+- L21:M27
+- N21:O27
+- P21:Q27
+- R21:S27
+- T21:U27
+- V21:X27
+- A30:G30
+- I30:X30
+- I31:K31
+- L31:M31
+- N31:O31
+- P31:Q31
+- R31:S31
+- T31:U31
+- V31:X31
+- A19:G19
+- I19:X19
+- I20:K20
+- L20:M20
+- N20:O20
+- P20:Q20
+- R20:S20
+- T20:U20
+- V20:X20
+- E15:F15
+- E16:F16
+- U1:X1
+- Q2:R2
+- Q1:T1
+- A7:G7
+- I7:X7
+- I8:X17
+- E8:G8
+- W2:X2
+- U2:V2
+- S2:T2
+- B1:P3
+- B4:P6
+
+CELL CONTENT AND STYLES (Rows 1-40):
+[B1] Value: LAPORAN MASALAH KUALITAS
+       Font: Calibri | Size: 48 | Bold: Yes
+       Alignment: center / center
+[Q1] Value: Dibuat
+       Font: Aptos Narrow | Size: 10 | Bold: No
+       Alignment: center / center
+[U1] Value: Disetujui
+       Font: Aptos Narrow | Size: 10 | Bold: No
+       Alignment: center / center
+[Q2] Value: PIC QC
+       Font: Aptos Narrow | Size: 10 | Bold: Yes
+       Alignment: center / center
+[S2] Value: Sect Head QC
+       Font: Aptos Narrow | Size: 10 | Bold: Yes
+       Alignment: center / center
+[U2] Value: PIC IQC
+       Font: Aptos Narrow | Size: 10 | Bold: Yes
+       Alignment: center / center
+[W2] Value: PIC Procurement
+       Font: Aptos Narrow | Size: 10 | Bold: Yes
+       Alignment: center / center
+[B4] Value: (Internal Problem Report QC)
+       Font: Calibri | Size: 48 | Bold: Yes
+       Alignment: center / center
+[A6] Value: PT. DHARMA POLIMETAL Tbk
+       Font: Aptos Narrow | Size: 8 | Bold: Yes
+       Alignment: general / center
+[A7] Value: 1. BACKGROUND
+       Font: Aptos Narrow | Size: 10 | Bold: No
+       Alignment: left / center
+[I7] Value: 5.TEMPORARY ACTION
+       Font: Aptos Narrow | Size: 10 | Bold: No
+       Alignment: left / center
+[A8] Value: No. Registrasi
+       Font: Aptos Narrow | Size: 10 | Bold: No
+       Alignment: left / center
+[E8] Value: Informasi problem dari :
+       Font: Aptos Narrow | Size: 10 | Bold: No
+       Alignment: left / center
+[A9] Value: Part Comp Name
+       Font: Aptos Narrow | Size: 10 | Bold: No
+       Alignment: general / bottom
+[E9] Value: Line Problem :
+       Font: Aptos Narrow | Size: 10 | Bold: No
+       Alignment: general / center
+[A10] Value: Part Comp Number
+       Font: Aptos Narrow | Size: 10 | Bold: No
+       Alignment: general / bottom
+[E10] Value: Tanggal
+       Font: Aptos Narrow | Size: 10 | Bold: No
+       Alignment: general / center
+[F10] Value: :
+       Font: Aptos Narrow | Size: 10 | Bold: No
+       Alignment: general / center
+[A11] Value: Type / Model
+       Font: Aptos Narrow | Size: 10 | Bold: No
+       Alignment: left / center
+[E11] Value: Jam
+       Font: Aptos Narrow | Size: 10 | Bold: No
+       Alignment: general / center
+[F11] Value: :
+       Font: Aptos Narrow | Size: 10 | Bold: No
+       Alignment: general / center
+[A12] Value: Nama Part OHP
+       Font: Aptos Narrow | Size: 10 | Bold: No
+       Alignment: left / center
+[E12] Value: Customer
+       Font: Aptos Narrow | Size: 10 | Bold: No
+       Alignment: general / center
+[F12] Value: :
+       Font: Aptos Narrow | Size: 10 | Bold: No
+       Alignment: general / center
+[A13] Value: No. Part OHP
+       Font: Aptos Narrow | Size: 10 | Bold: No
+       Alignment: left / center
+[A14] Value: Jumlah NG
+       Font: Aptos Narrow | Size: 10 | Bold: No
+       Alignment: left / center
+[A15] Value: Problem Status
+       Font: Aptos Narrow | Size: 10 | Bold: No
+       Alignment: left / center
+[A16] Value: Line Stop
+       Font: Aptos Narrow | Size: 10 | Bold: No
+       Alignment: left / center
+[A17] Value: Klasifikasi
+       Font: Aptos Narrow | Size: 10 | Bold: No
+       Alignment: left / center
+[A18] Value: Detail Problem
+       Font: Aptos Narrow | Size: 10 | Bold: No
+       Alignment: left / center
+[A19] Value: 2. ILUSTRASI PROBLEM:
+       Font: Aptos Narrow | Size: 10 | Bold: No
+       Alignment: left / center
+[I19] Value: 6. OUTFLOW (WHY SEND)
+       Font: Aptos Narrow | Size: 10 | Bold: No
+       Alignment: left / center
+[I20] Value: PROBLEM
+       Font: Aptos Narrow | Size: 10 | Bold: No
+       Alignment: center / center
+[L20] Value: Why 1
+       Font: Aptos Narrow | Size: 10 | Bold: No
+       Alignment: center / center
+[N20] Value: Why 2
+       Font: Aptos Narrow | Size: 10 | Bold: No
+       Alignment: center / center
+[P20] Value: Why 3
+       Font: Aptos Narrow | Size: 10 | Bold: No
+       Alignment: center / center
+[R20] Value: Why 4
+       Font: Aptos Narrow | Size: 10 | Bold: No
+       Alignment: center / center
+[T20] Value: Why 5
+       Font: Aptos Narrow | Size: 10 | Bold: No
+       Alignment: center / center
+[V20] Value: Root Couse
+       Font: Aptos Narrow | Size: 10 | Bold: No
+       Alignment: center / center
+[A30] Value: 3. IDENTIFICATION PROBLEM
+       Font: Aptos Narrow | Size: 10 | Bold: No
+       Alignment: left / center
+[I30] Value: 7. OCCURRENCE PREVENTION (WHY MADE)
+       Font: Aptos Narrow | Size: 10 | Bold: No
+       Alignment: left / center
+[I31] Value: PROBLEM
+       Font: Aptos Narrow | Size: 10 | Bold: No
+       Alignment: center / center
+[L31] Value: Why 1
+       Font: Aptos Narrow | Size: 10 | Bold: No
+       Alignment: center / center
+[N31] Value: Why 2
+       Font: Aptos Narrow | Size: 10 | Bold: No
+       Alignment: center / center
+[P31] Value: Why 3
+       Font: Aptos Narrow | Size: 10 | Bold: No
+       Alignment: center / center
+[R31] Value: Why 4
+       Font: Aptos Narrow | Size: 10 | Bold: No
+       Alignment: center / center
+[T31] Value: Why 5
+       Font: Aptos Narrow | Size: 10 | Bold: No
+       Alignment: center / center
+[V31] Value: Root Couse
+       Font: Aptos Narrow | Size: 10 | Bold: No
+       Alignment: center / center
