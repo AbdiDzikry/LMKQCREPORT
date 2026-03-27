@@ -1,0 +1,30 @@
+{
+    "version": 2,
+    "framework": null,
+    "functions": {
+        "api/*.php": {
+            "runtime": "vercel-php@0.7.5"
+        }
+    },
+    "routes": [
+        {
+            "src": "/(css|js|images|favicon.ico|robots.txt)(.*)",
+            "dest": "/public/$1$2"
+        },
+        {
+            "src": "/(.*)",
+            "dest": "/api/index.php"
+        }
+    ],
+    "env": {
+        "APP_ENV": "production",
+        "APP_DEBUG": "false",
+        "APP_URL": "https://your-app.vercel.app",
+        "APP_KEY": "base64:...",
+        "DB_CONNECTION": "pgsql",
+        "SESSION_DRIVER": "cookie",
+        "BCRYPT_ROUNDS": "10",
+        "CACHE_STORE": "array",
+        "LOG_CHANNEL": "stderr"
+    }
+}
