@@ -64,8 +64,8 @@
     </div>
 
     <!-- User & Settings -->
-    <div class="border-t border-indigo-800 p-4 bg-indigo-950">
-        <x-dropdown align="top" width="48">
+    <div class="border-t border-indigo-800 p-4 bg-indigo-950 mt-auto">
+        <x-dropdown align="top" width="48" contentClasses="py-1 bg-white ring-1 ring-black ring-opacity-5 mb-2">
             <x-slot name="trigger">
                 <button
                     class="w-full flex items-center justify-between px-3 py-2 text-sm leading-4 font-medium rounded-md text-gray-200 hover:text-white hover:bg-indigo-800 focus:outline-none transition ease-in-out duration-150">
@@ -75,8 +75,8 @@
                             {{ substr(Auth::user()->name, 0, 1) }}
                         </div>
                         <div class="text-left truncate">
-                            <p class="truncate">{{ Auth::user()->name }}</p>
-                            <p class="text-xs text-indigo-400 capitalize truncate">{{ Auth::user()->role }}</p>
+                            <p class="truncate font-semibold">{{ Auth::user()->name }}</p>
+                            <p class="text-xs text-indigo-300 capitalize truncate opacity-80">{{ STR_REPLACE('_', ' ', Auth::user()->role) }}</p>
                         </div>
                     </div>
                 </button>
