@@ -14,5 +14,12 @@ require __DIR__ . '/../vendor/autoload.php';
 /** @var \Illuminate\Foundation\Application $app */
 $app = require_once __DIR__ . '/../bootstrap/app.php';
 
-// Laravel 11's new way of handling requests
+// Ensure the storage paths are writable for serverless (Vercel)
+// We use the /tmp directory which is the only writable directory on Vercel
+$app->useStoragePath('/tmp/storage');
+if (!is_dir('/tmp/storage/framework/views')) {
+    mkdir('/tmp/storage/framework/views', 0755, true);
+}
+
+// Laravel 11/12 request capture and handling
 $app->handleRequest(\Illuminate\Http\Request::capture());
