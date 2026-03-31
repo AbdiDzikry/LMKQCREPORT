@@ -19,13 +19,17 @@
     ],
     "env": {
         "APP_ENV": "production",
-        "APP_DEBUG": "false",
+        "APP_DEBUG": "true",
         "APP_URL": "https://lmkqcreport.vercel.app",
         "APP_KEY": "base64:o2R/uWsaSdrUkZ/QGV1rt2qJBFppK9MwQzEVjxGvsHY=",
         "DB_CONNECTION": "pgsql",
         "SESSION_DRIVER": "cookie",
         "BCRYPT_ROUNDS": "10",
         "CACHE_STORE": "array",
-        "LOG_CHANNEL": "stderr"
+        "LOG_CHANNEL": "stderr",
+        "APP_SERVICES_CACHE": "/tmp/services.php",
+        "APP_PACKAGES_CACHE": "/tmp/packages.php",
+        "APP_CONFIG_CACHE": "/tmp/config.php",
+        "APP_ROUTES_CACHE": "/tmp/routes.php"
     }
 }
