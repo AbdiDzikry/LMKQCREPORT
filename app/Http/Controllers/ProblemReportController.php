@@ -294,11 +294,11 @@ class ProblemReportController extends Controller
                     $drawing->setName('Ilustrasi Problem');
                     $drawing->setDescription('Evidence Image');
                     $drawing->setPath($tempPath);
-                    $drawing->setCoordinates('A20');
+                    $drawing->setCoordinates('C20');
                     
-                    // Adjust size to fit approx A20:G29
-                    $drawing->setHeight(180); 
-                    $drawing->setOffsetX(5);
+                    // Adjust size to fit approx C20-C28 (Centering)
+                    $drawing->setHeight(150); 
+                    $drawing->setOffsetX(10);
                     $drawing->setOffsetY(5);
                     $drawing->setWorksheet($sheet);
                     
