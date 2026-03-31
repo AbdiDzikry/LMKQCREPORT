@@ -5,16 +5,14 @@
  * This file bridges the serverless environment to Laravel's main entry point.
  */
 
-// Laravel 11/12 bridge for Vercel
+define('LARAVEL_START', microtime(true));
+
+// Register the Composer autoloader...
 require __DIR__ . '/../vendor/autoload.php';
+
+// Bootstrap Laravel and handle the request...
+/** @var \Illuminate\Foundation\Application $app */
 $app = require_once __DIR__ . '/../bootstrap/app.php';
 
-$kernel = $app->make(Illuminate\Contracts\Http\Kernel::class);
-
-$response = $kernel->handle(
-    $request = Illuminate\Http\Request::capture()
-);
-
-$response->send();
-
-$kernel->terminate($request, $response);
+// Laravel 11's new way of handling requests
+$app->handleRequest(\Illuminate\Http\Request::capture());
