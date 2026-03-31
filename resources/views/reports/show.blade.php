@@ -68,6 +68,17 @@
                         <p class="whitespace-pre-line text-lg">{{ $report->detail }}</p>
                     </div>
 
+                    @if($report->evidence_image)
+                        <div class="mt-6 border-t pt-4">
+                            <span class="block text-sm font-medium text-gray-500 mb-2">Bukti Gambar (Ilustrasi Problem)</span>
+                            <div class="rounded-xl overflow-hidden border border-gray-200">
+                                <img src="{{ \Illuminate\Support\Facades\Storage::disk('supabase')->url($report->evidence_image) }}" 
+                                     alt="Bukti Gambar" 
+                                     class="w-full h-auto max-h-[500px] object-contain bg-gray-50">
+                            </div>
+                        </div>
+                    @endif
+
                     <div class="mt-6 border-t pt-4">
                         <span class="block text-sm font-medium text-gray-500">Verification Status</span>
                         @if($report->status === 'pending')

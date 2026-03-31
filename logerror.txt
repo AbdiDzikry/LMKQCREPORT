@@ -1,5 +1,2 @@
-(index):14 Mixed Content: The page at 'https://lmkqcreport.vercel.app/' was loaded over HTTPS, but requested an insecure stylesheet 'http://lmkqcreport.vercel.app/build/assets/app-HbPcj4AN.css'. This request has been blocked; the content must be served over HTTPS.
-(index):14 Mixed Content: The page at 'https://lmkqcreport.vercel.app/' was loaded over HTTPS, but requested an insecure script 'http://lmkqcreport.vercel.app/build/assets/app-BIJoUbyE.js'. This request has been blocked; the content must be served over HTTPS.
-(index):14 Mixed Content: The page at 'https://lmkqcreport.vercel.app/' was loaded over HTTPS, but requested an insecure stylesheet 'http://lmkqcreport.vercel.app/build/assets/app-HbPcj4AN.css'. This request has been blocked; the content must be served over HTTPS.
-(index):1 Mixed Content: The page at 'https://lmkqcreport.vercel.app/' was loaded over HTTPS, but requested an insecure stylesheet 'http://lmkqcreport.vercel.app/build/assets/app-HbPcj4AN.css'. This request has been blocked; the content must be served over HTTPS.
+(index):1 Unsafe attempt to load URL https://lmkqcreport.vercel.app/ from frame with URL chrome-error://chromewebdata/. Domains, protocols and ports must match.
 
