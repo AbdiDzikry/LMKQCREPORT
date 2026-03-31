@@ -91,7 +91,7 @@
                             </div>
                             <h1 class="text-6xl lg:text-7xl font-extrabold text-white leading-tight">
                                 Monitor Kualitas <br>
-                                <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-orange-400 to-red-600 text-warning-glow">Secara Instan.</span>
+                                <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-orange-400 to-red-600 text-warning-glow text-shadow-xl">Secara Instan.</span>
                             </h1>
                             <p class="text-xl text-stone-400 leading-relaxed max-w-lg">
                                 Platform pelaporan Quality Control terpadu untuk tim LMK. Input laporan masalah, verifikasi berjenjang, dan ekspor data dalam satu dashboard intuitif.
@@ -103,49 +103,40 @@
                                         <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg>
                                     </a>
                                 @else
-                                    <a href="{{ route('login') }}" class="px-8 py-4 bg-white hover:bg-stone-100 text-stone-950 font-bold rounded-2xl transition-all shadow-xl flex items-center gap-2 text-lg group">
+                                    <a href="{{ route('login') }}" class="px-8 py-4 bg-white hover:bg-stone-100 text-stone-950 font-bold rounded-2xl transition-all shadow-xl flex items-center gap-2 text-lg group group">
                                         Login ke Sistem
                                         <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1"></path></svg>
                                     </a>
                                 @endauth
-                                <a href="#features" class="px-8 py-4 glass text-white font-bold rounded-2xl transition-all hover:bg-white/10 flex items-center gap-2 text-lg">
+                                <a href="#features" class="px-8 py-4 glass text-white font-bold rounded-2xl transition-all hover:bg-white/10 flex items-center gap-2 text-lg group">
                                     Lihat Fitur
+                                    <svg class="w-5 h-5 group-hover:translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                                 </a>
                             </div>
                         </div>
 
-                        <!-- Right Content (Visual) -->
-                        <div class="relative hidden lg:block">
-                            <div class="absolute -inset-4 bg-amber-500/10 blur-3xl rounded-full"></div>
-                            <div class="relative glass rounded-3xl p-8 shadow-2xl animate-float border-amber-500/10">
-                                <div class="space-y-6">
-                                    <div class="flex items-center justify-between border-b border-white/10 pb-4">
-                                        <div class="h-4 w-32 bg-stone-700 rounded-full"></div>
-                                        <div class="h-8 w-8 bg-amber-500/20 rounded-lg"></div>
-                                    </div>
-                                    <div class="space-y-4">
-                                        <div class="h-12 w-full bg-stone-800/50 rounded-xl"></div>
-                                        <div class="h-12 w-3/4 bg-stone-800/50 rounded-xl"></div>
-                                        <div class="grid grid-cols-2 gap-4">
-                                            <div class="h-24 bg-amber-500/10 border border-amber-500/20 rounded-2xl flex items-center justify-center">
-                                                <div class="text-center">
-                                                    <div class="text-amber-500 font-bold text-2xl">98%</div>
-                                                    <div class="text-xs text-amber-500/60 uppercase tracking-widest font-bold">Accuracy</div>
-                                                </div>
-                                            </div>
-                                            <div class="h-24 bg-red-900/10 border border-red-900/20 rounded-2xl flex items-center justify-center">
-                                                <div class="text-center">
-                                                    <div class="text-red-600 font-bold text-2xl">450+</div>
-                                                    <div class="text-xs text-red-600/60 uppercase tracking-widest font-bold">Reports</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="pt-2">
-                                        <div class="h-10 w-full bg-amber-600/50 rounded-xl border border-amber-400/30"></div>
-                                    </div>
-                                </div>
+                        <!-- Right Content (Credits replace Dashboard Visual) -->
+                        <div class="relative flex flex-col gap-6 items-center lg:items-end">
+                            <div class="absolute -inset-4 bg-amber-500/5 blur-3xl rounded-full"></div>
+                            
+                            <div class="relative glass p-8 rounded-3xl border-amber-500/10 w-full max-w-sm hover:border-amber-500/30 transition-all group animate-float">
+                                <p class="text-amber-500 text-xs uppercase tracking-widest font-extrabold mb-3">Concept by</p>
+                                <h3 class="text-2xl font-bold text-white mb-4">Muhammad Wahid Darmawan</h3>
+                                <a href="https://www.linkedin.com/in/muhammadwahiddarmawan/" target="_blank" class="inline-flex items-center gap-2 text-amber-500 font-bold hover:gap-3 transition-all group/link">
+                                    Check Profile
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                                </a>
                             </div>
+
+                            <div class="relative glass p-8 rounded-3xl border-amber-500/10 w-full max-w-sm hover:border-amber-500/30 transition-all group animate-float" style="animation-delay: 1s;">
+                                <p class="text-amber-500 text-xs uppercase tracking-widest font-extrabold mb-3">Develop System by</p>
+                                <h3 class="text-2xl font-bold text-white mb-4">Sulthan Abdi Dzikry</h3>
+                                <a href="https://www.linkedin.com/in/sulthan-abdi-dzikry" target="_blank" class="inline-flex items-center gap-2 text-amber-500 font-bold hover:gap-3 transition-all group/link">
+                                    Check Profile
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                                </a>
+                            </div>
+
                         </div>
 
                     </div>
@@ -185,33 +176,18 @@
                 </div>
             </section>
 
-            <!-- Credits Section & Footer -->
+            <!-- Footer -->
             <footer class="py-16 border-t border-white/5 bg-stone-950">
-                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-8">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
                     
-                    <div class="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto">
-                        <div class="glass p-6 rounded-2xl border-amber-500/10">
-                            <p class="text-stone-500 text-xs uppercase tracking-widest font-bold mb-2">Concept by</p>
-                            <a href="https://www.linkedin.com/in/muhammadwahiddarmawan/" target="_blank" class="text-white font-bold hover:text-amber-500 transition-colors text-lg block">
-                                Muhammad Wahid Darmawan
-                            </a>
-                        </div>
-                        <div class="glass p-6 rounded-2xl border-amber-500/10">
-                            <p class="text-stone-500 text-xs uppercase tracking-widest font-bold mb-2">Develop System by</p>
-                            <a href="https://www.linkedin.com/in/sulthan-abdi-dzikry" target="_blank" class="text-white font-bold hover:text-amber-500 transition-colors text-lg block">
-                                Sulthan Abdi Dzikry
-                            </a>
-                        </div>
+                    <div class="pt-4">
+                        <p class="text-amber-500/80 font-black text-3xl tracking-[0.3em] uppercase italic drop-shadow-lg">Magang Nasional</p>
                     </div>
 
-                    <div class="pt-8">
-                        <p class="text-amber-500/80 font-extrabold text-2xl tracking-[0.2em] uppercase italic">Magang Nasional</p>
-                    </div>
-
-                    <div class="pt-8 text-stone-600 text-xs flex flex-col md:flex-row items-center justify-center gap-4">
+                    <div class="pt-8 text-stone-600 text-xs flex flex-col md:flex-row items-center justify-center gap-4 border-t border-white/5 mt-8 w-fit mx-auto">
                         <span>&copy; {{ date('Y') }} PT LMK Quality Control Team.</span>
                         <span class="hidden md:block">|</span>
-                        <span>Designed with Precision and Industrial Standards.</span>
+                        <span>Industrial Grade Standards.</span>
                     </div>
                 </div>
             </footer>
