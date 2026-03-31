@@ -7,6 +7,13 @@
 
 define('LARAVEL_START', microtime(true));
 
+// Manually set env for serverless to avoid cache issues
+// This prevents Laravel from using fixed paths in bootstrap/cache
+putenv('APP_SERVICES_CACHE=/tmp/services.php');
+putenv('APP_PACKAGES_CACHE=/tmp/packages.php');
+putenv('APP_CONFIG_CACHE=/tmp/config.php');
+putenv('APP_ROUTES_CACHE=/tmp/routes.php');
+
 // Register the Composer autoloader...
 require __DIR__ . '/../vendor/autoload.php';
 
