@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\ProblemReport;
+use Illuminate\Support\Facades\Storage;
 
 class ProblemReportController extends Controller
 {
@@ -55,7 +56,7 @@ class ProblemReportController extends Controller
         ]);
 
         if ($request->hasFile('evidence_image')) {
-            $path = $request->file('evidence_image')->store('reports', 'public');
+            $path = $request->file('evidence_image')->store('reports', 'supabase');
             $validated['evidence_image'] = $path;
         }
 
@@ -282,20 +283,29 @@ class ProblemReportController extends Controller
         // Header is Row 19 (taken from your template logic or user screenshot)
         // We'll place the image starting at A20.
         if ($report->evidence_image) {
-            $imagePath = storage_path('app/public/' . $report->evidence_image);
-            if (file_exists($imagePath)) {
-                $drawing = new \PhpOffice\PhpSpreadsheet\Worksheet\Drawing();
-                $drawing->setName('Ilustrasi Problem');
-                $drawing->setDescription('Evidence Image');
-                $drawing->setPath($imagePath);
-                $drawing->setCoordinates('A20');
-                
-                // Adjust size to fit approx A20:G29
-                // A-G columns are quite wide.
-                $drawing->setHeight(180); // Adjust as needed for row 20-29
-                $drawing->setOffsetX(5);
-                $drawing->setOffsetY(5);
-                $drawing->setWorksheet($sheet);
+            try {
+                // Download from Supabase to a temporary local file for PhpSpreadsheet
+                $imgContent = Storage::disk('supabase')->get($report->evidence_image);
+                if ($imgContent) {
+                    $tempPath = tempnam(sys_get_temp_dir(), 'qc_') . '.png';
+                    file_put_contents($tempPath, $imgContent);
+
+                    $drawing = new \PhpOffice\PhpSpreadsheet\Worksheet\Drawing();
+                    $drawing->setName('Ilustrasi Problem');
+                    $drawing->setDescription('Evidence Image');
+                    $drawing->setPath($tempPath);
+                    $drawing->setCoordinates('A20');
+                    
+                    // Adjust size to fit approx A20:G29
+                    $drawing->setHeight(180); 
+                    $drawing->setOffsetX(5);
+                    $drawing->setOffsetY(5);
+                    $drawing->setWorksheet($sheet);
+                    
+                    // The temp file will be cleaned up by the OS eventually
+                }
+            } catch (\Exception $e) {
+                \Log::error('Failed to include image in Excel: ' . $e->getMessage());
             }
         }
 
