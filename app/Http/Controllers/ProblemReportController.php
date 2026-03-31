@@ -51,7 +51,13 @@ class ProblemReportController extends Controller
             'problem_type' => 'required|in:visual,dimensi,kelengkapan',
             'detail' => 'required|string',
             'pic_qc' => 'required|string|max:255',
+            'evidence_image' => 'nullable|image|mimes:jpeg,png,jpg|max:2048',
         ]);
+
+        if ($request->hasFile('evidence_image')) {
+            $path = $request->file('evidence_image')->store('reports', 'public');
+            $validated['evidence_image'] = $path;
+        }
 
         $validated['user_id'] = auth()->id();
         $validated['status'] = 'pending';
@@ -271,6 +277,27 @@ class ProblemReportController extends Controller
         $detailStyle->getAlignment()->setVertical(\PhpOffice\PhpSpreadsheet\Style\Alignment::VERTICAL_CENTER);
         $detailStyle->getFont()->setBold(true)->setItalic(true);
         $detailStyle->getBorders()->getOutline()->setBorderStyle(\PhpOffice\PhpSpreadsheet\Style\Border::BORDER_THIN);
+
+        // --- SECTION 2: ILUSTRASI PROBLEM (A20:G29) ---
+        // Header is Row 19 (taken from your template logic or user screenshot)
+        // We'll place the image starting at A20.
+        if ($report->evidence_image) {
+            $imagePath = storage_path('app/public/' . $report->evidence_image);
+            if (file_exists($imagePath)) {
+                $drawing = new \PhpOffice\PhpSpreadsheet\Worksheet\Drawing();
+                $drawing->setName('Ilustrasi Problem');
+                $drawing->setDescription('Evidence Image');
+                $drawing->setPath($imagePath);
+                $drawing->setCoordinates('A20');
+                
+                // Adjust size to fit approx A20:G29
+                // A-G columns are quite wide.
+                $drawing->setHeight(180); // Adjust as needed for row 20-29
+                $drawing->setOffsetX(5);
+                $drawing->setOffsetY(5);
+                $drawing->setWorksheet($sheet);
+            }
+        }
 
         // Signatures Area (Q2:X6)
         $approvalCols = [

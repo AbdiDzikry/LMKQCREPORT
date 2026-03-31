@@ -20,7 +20,7 @@
                         </div>
                     @endif
 
-                    <form action="{{ route('reports.store') }}" method="POST">
+                    <form action="{{ route('reports.store') }}" method="POST" enctype="multipart/form-data">
                         @csrf
 
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -143,6 +143,18 @@
                                 <x-input-label for="pic_qc" value="PIC QC" />
                                 <x-text-input id="pic_qc" name="pic_qc" type="text" class="mt-1 block w-full"
                                     :value="old('pic_qc')" required />
+                            </div>
+
+                            <div class="md:col-span-2">
+                                <x-input-label for="evidence_image" value="Bukti Gambar (Ilustrasi Problem)" />
+                                <input type="file" id="evidence_image" name="evidence_image" accept="image/*"
+                                    class="mt-1 block w-full text-sm text-gray-500
+                                    file:mr-4 file:py-2 file:px-4
+                                    file:rounded-md file:border-0
+                                    file:text-sm file:font-semibold
+                                    file:bg-indigo-50 file:text-indigo-700
+                                    hover:file:bg-indigo-100 border border-gray-300 rounded-md shadow-sm p-1">
+                                <p class="mt-1 text-xs text-gray-500">Format: JPG, PNG. Maks: 2MB. Gambar akan muncul di Excel range A20-G29.</p>
                             </div>
 
                             <div class="md:col-span-2">

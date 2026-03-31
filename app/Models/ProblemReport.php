@@ -22,6 +22,7 @@ class ProblemReport extends Model
         'type',
         'problem_type',
         'detail',
+        'evidence_image',
         'pic_qc',
         'status',
         'verified_by',
